@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Register - Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <h1 class="main-heading">Create an Account</h1> 
+
+    <div class="register-container">
+        <form id="registerForm">
+            <label for="registerName">Full Name:</label>
+            <input type="text" id="registerName" placeholder="Enter your name" required>
+
+            <label for="registerEmail">Email:</label>
+            <input type="email" id="registerEmail" placeholder="Enter your email" required>
+
+            <label for="registerPassword">Password:</label>
+            <input type="password" id="registerPassword" placeholder="Create a password" required>
+
+            <label for="planSelect">Choose Plan:</label>
+            <select id="planSelect">
+                <option value="free">Free - ₹0/month</option>
+                <option value="premium">Premium - ₹799/month</option>
+                <option value="vip">VIP - ₹1499/month</option>
+            </select>
+
+            <p>Total Cost: <span id="totalCost">₹0.00</span></p>
+
+            <div class="button-group">
+                <button type="submit">Register</button>
+                <button type="button" id="resetRegister">Reset</button> <!-- Fixed Reset Button -->
+            </div>
+
+            <p class="back-to-login"><a href="login.html">⬅ Back to Login</a></p>
+        </form>
+    </div>
+
+    <script src="login2.js"></script>
+</body>
+</html>

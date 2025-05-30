@@ -1,0 +1,61 @@
+<html>
+<head>
+      <title>Share Your Recipe</title>
+    <link rel="stylesheet" href="styles.css"> <!-- External CSS Link -->
+</head>
+
+<body>
+    <header>
+        <h1>📝 Share Your Favorite Recipe 🍽️</h1>
+        <p>Submit your delicious recipes and inspire others!</p>
+    </header>
+
+    <section class="form-container">
+        <h2>Submit a Recipe</h2>
+        <form id="recipeForm">
+            <label for="recipeName">Recipe Name:</label>
+            <input type="text" id="recipeName" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea id="ingredients" rows="4" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea id="instructions" rows="6" required></textarea>
+
+            <label for="recipeImage">Upload Image:</label>
+            <input type="file" id="recipeImage" accept="image/*">
+
+            <button type="submit">Submit Recipe</button>
+            <button type="button" id="resetButton">Reset</button> <!-- Reset Button -->
+        </form>
+    </section>
+
+    <section class="recipe-list">
+        <h2>Shared Recipes</h2>
+        <ul id="recipesDisplay"></ul>
+    </section>
+
+    <p><a href="../DashBoardHTML/main.html" style="text-align: left; display: block; color: #008000; font-size: 18px; text-decoration: none;">⬅️ Back to Home</a></p>
+
+    <script>
+        document.getElementById("recipeForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form reload
+
+            let recipeName = document.getElementById("recipeName").value;
+            let ingredients = document.getElementById("ingredients").value;
+            let instructions = document.getElementById("instructions").value;
+
+            let newRecipe = document.createElement("li");
+            newRecipe.innerHTML = `<h3>${recipeName}</h3><p><strong>Ingredients:</strong> ${ingredients}</p><p><strong>Instructions:</strong> ${instructions}</p>`;
+            document.getElementById("recipesDisplay").appendChild(newRecipe);
+
+            document.getElementById("recipeForm").reset(); // Reset form after submission
+        });
+
+        // Reset Button Functionality
+        document.getElementById("resetButton").addEventListener("click", function() {
+            document.getElementById("recipeForm").reset();
+        });
+    </script>
+</body>
+</html>

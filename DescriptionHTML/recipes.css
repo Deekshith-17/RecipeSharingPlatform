@@ -1,0 +1,64 @@
+/* General Styling for Recipe Pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe5b4;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Image Styling */
+figure img {
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Recipe Title */
+h1 {
+    color: #8b0000;
+    font-size: 26px;
+}
+
+/* Ingredients & Instructions */
+h2 {
+    color: #d2691e;
+}
+
+ul, ol {
+    text-align: left;
+    margin: auto;
+    width: 50%;
+}
+
+/* Buttons */
+button {
+    padding: 12px;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #a52a2a;
+}
+
+/* Back to Home Link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 16px;
+    background: #008000;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+a:hover {
+    background: #006400;
+}

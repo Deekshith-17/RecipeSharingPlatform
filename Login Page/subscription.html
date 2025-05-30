@@ -1,0 +1,46 @@
+<html>
+<head>
+    <p class="back-to-login"><a href="login.html">⬅ Back to Login</a></p>
+    <title>Subscription - Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="subscription.css">
+</head>
+
+<body>
+    <h1 class="main-heading">Choose Your Subscription Plan</h1>
+
+    <div class="subscription-container">
+        <form id="subscriptionForm">
+            <h2>🌟 Premium Membership</h2>
+            <p>Unlock exclusive recipes, cooking classes & expert tips!</p>
+
+            <label for="planSelect">Choose Plan:</label>
+            <select id="planSelect">
+                <option value="free">Free - ₹0/month</option>
+                <option value="premium">Premium - ₹799/month</option>
+                <option value="vip">VIP - ₹1499/month</option>
+            </select>
+
+            <p>Total Cost: <span id="totalCost">₹0.00</span></p>
+
+            <h3>Payment Details</h3>
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" placeholder="Enter your card number" required>
+
+            <label for="expiryDate">Expiry Date:</label>
+            <input type="month" id="expiryDate" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="password" id="cvv" placeholder="Enter CVV" required>
+
+            <div class="button-group">
+                <button type="submit">Subscribe Now</button>
+                <button type="button" id="resetSubscription">Reset</button>
+            </div>
+         <p class="back-to-login"><a href="login.html">⬅ Back to Login</a></p>
+
+        </form>
+    </div>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

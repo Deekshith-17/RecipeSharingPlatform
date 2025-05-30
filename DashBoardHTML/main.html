@@ -1,110 +1,94 @@
 <html>
 <head>
-      <title>Recipe Sharing Platform
-</title>
+    
+    <title>Recipe Sharing Platform</title>
+    <link rel="stylesheet" href="main.css"> <!-- Linking External CSS -->
 </head>
 
-<body  style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8f8f8;">
+<body>
+    <header>
+        <h1>🍽️ Welcome to Delicious Recipes 🍽️</h1>
+        <p>Discover, Cook & Share Amazing Recipes!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="../MenuNavigatorHTML/fastfood.html">🍔🍟 Fast Foods</a> |
+        <a href="../MenuNavigatorHTML/Cakes.html">🍰 Cakes</a> |
+        <a href="../MenuNavigatorHTML/desserts.html">🍨 Desserts</a>
+        <a href="../Recipe Submission/share_recipe.html">📝 Share a Recipe</a>
 
 
-     <header style="background-color: #d2691e; padding: 20px; text-align: center; color: white;">
-     <h1>🍽️ Welcome to Delicious Recipes 🍽️</h1>
-     <p style="font-style: italic;">Discover, Cook & Share Amazing Recipes!</p>
-     </header>
+    </nav>
 
+    <!-- Search Button -->
+    <a href="../MenuNavigatorHTML/search.html">
+        <button class="search-button">🔍 Search for Recipes</button>
+    </a>
+  
 
-<!--navigation -->
-     
-     <nav style="background-color: #8b0000; padding: 10px; text-align: center;">
+    <div class="content-container">
+        <!-- Featured Recipes Section -->
+        <section class="featured-recipes">
+            <h2>🔥 Featured Recipes 🔥</h2>
+            <div class="recipe-container">
 
-     <a href="/MenuNavigatorHTML/fastfood.html" style="color: white; text-decoration: none; margin: 10px;">🍔🍟Fast Foods</a>|
-     <a href="/MenuNavigatorHTML/Cakes.html" style="color: white; text-decoration: none; margin: 10px;">🍰Cakes</a>|
-     <a href="/MenuNavigatorHTML/desserts.html"style="color: white; text-decoration: none; margin: 10px;">🍨Desserts</a>
-     </nav>
+                <!-- Recipe 1 -->
+                <div class="recipe-box">
+                    <a href="../DescriptionHTML/p.html">
+                        <img src="../Images/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.avif" alt="Pasta">
+                    </a>
+                    <h3><a href="../DescriptionHTML/p.html">Pasta</a></h3>
+                    <p>A delicious pasta recipe for pasta lovers!</p>
+                </div>
 
+                <!-- Recipe 2 -->
+                <div class="recipe-box">
+                    <a href="../DescriptionHTML/p1.html">
+                        <img src="../Images/360_F_308404381_LqyMIXDPOR6Ut1TqE2cJRQdxomGsQegc.jpg" alt="Chocolate Cake">
+                    </a>
+                    <h3><a href="../DescriptionHTML/p1.html">🍫 Chocolate Cake</a></h3>
+                    <p>A rich and moist chocolate cake for dessert lovers!</p>
+                </div>
 
+                <!-- Recipe 3 -->
+                <div class="recipe-box">
+                    <a href="../DescriptionHTML/p2.html">
+                        <img src="../Images/david-foodphototasty-E94j3rMcxlw-unsplash.jpg" alt="Burger">
+                    </a>
+                    <h3><a href="../DescriptionHTML/p2.html">Burger</a></h3>
+                    <p>Healthy Indian-style burger. Enjoy!</p>
+                </div>
 
-<div style="padding: 20px;">
+                <!-- Recipe 4 -->
+                <div class="recipe-box">
+                    <a href="../DescriptionHTML/p6.html">
+                        <img src="../Images/00852425-Vanilla-ice-cream-with-chocolate-sauce-cream-cherry.jpg" alt="Chocolate Sundae">
+                    </a>
+                    <h3><a href="../DescriptionHTML/p6.html">Chocolate Sundae with Vanilla Ice Cream</a></h3>
+                    <p>A rich and moist Chocolate Sundae with Vanilla Ice Cream for dessert lovers!</p>
+                </div>
 
-<!-- Featured Recipes Section -->
+            </div>
+        </section>
 
-     <section style="text-align: center;">
-       <h2 style="color: #8b0000;">🔥 Featured Recipes 🔥</h2>
+        <hr>
 
-       <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-
-<!-- Recipe 1 -->
-      
-       <div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px #ccc; width: 250px;">
-       <a href="/DescriptionHTML/p.html">
-       <img src="/Images/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19744.avif" alt="Pasta" width="100%" style="border-radius: 10px;">
-       </a>
-       <h3><a href="/DescriptionHTML/p.html" style="text-decoration: none; color: #d2691e;">Pasta</a></h3>
-       <p>A Delisious Pasta Recipe for Pasta lovers!</p>
-       </div>
-
-<!-- Recipe 2 -->
-        <div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px #ccc; width: 250px;">
-        <a href="/DescriptionHTML/p1.html">
-        <img src="/Images/360_F_308404381_LqyMIXDPOR6Ut1TqE2cJRQdxomGsQegc.jpg" alt="Chocolate Cake" width="100%" style="border-radius: 10px;">
-        </a>
-        <h3><a href="/DescriptionHTML/p1.html" style="text-decoration: none; color: #d2691e;">🍫 Chocolate Cake</a></h3>
-        <p>A rich and moist chocolate cake for dessert lovers!</p>
-        </div>
-
-<!-- Recipe 3  -->
-
- 
-        <div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px #ccc; width: 250px;">
-       <a href="/DescriptionHTML/p2.html">
-        <img src="/Images/david-foodphototasty-E94j3rMcxlw-unsplash.jpg" alt="Burger" width="100%" style="border-radius: 10px;">
-        </a>
-        <h3><a href="/DescriptionHTML/p2.html" style="text-decoration: none; color: #d2691e;">Burger</a></h3>
-        <p>Healthy Indian-style burger.Enjoy!</p>
-        </div>
-    
-<!--Recipe 4 -->
-
-        <div style="background-color: white; padding: 15px; border-radius: 10px; box-shadow: 2px 2px 10px #ccc; width: 250px;">
-        <a href="/DescriptionHTML/p6.html">
-        <img src="/Images/00852425-Vanilla-ice-cream-with-chocolate-sauce-cream-cherry.jpg" alt="Chocolate Sundae with Vanilla Ice Cream" width="100%" style="border-radius: 10px;">
-        </a>
-        <h3><a href="/DescriptionHTML/p6.html" style="text-decoration: none; color: #d2691e;">Chocolate Sundae with Vanilla Ice Cream</a></h3>
-        <p>A rich and moist Chocolate Sundae with Vanilla Ice Cream for dessert lovers!</p>
-        </div>
-
-
-
-       
-
-
-
-
-        </div>
-     </section>
-
-<hr style="margin: 40px 0;">
-
-
-<!-- About Us Section -->
-        <section style="text-align: center; background-color: #008000; color: white; padding: 20px; border-radius: 10px;">
-        <h2>🌿 About Us 🌿</h2>
-        <p>We are passionate about cooking and sharing amazing recipes from all around the world.</p>
-        <p>Join us and contribute your own recipes!</p>
+        <!-- About Us Section -->
+        <section class="about-section">
+            <h2>🌿 About Us 🌿</h2>
+            <p>We are passionate about cooking and sharing amazing recipes from all around the world.</p>
+            <p>Join us and contribute your own recipes!</p>
         </section>
     </div>
 
-</hr>
-
-<!-- Footer -->
-    <footer style="background-color: #8b0000; padding: 10px; text-align: center; color: white;">
+    <!-- Footer -->
+    <footer>
         <p>&copy; 2025 Delicious Recipes | All Rights Reserved.</p>
+ <p class="back-to-login"><a href="../Login Page/login.html"style="text-align: center; display: block; color: #FFD700; font-size: 18px; text-decoration: none;">⬅ Back to Login</a></p>
+ 
+
+
     </footer>
-
-
-</div>
-
-      
 </body>
-
 </html>
